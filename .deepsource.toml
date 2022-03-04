@@ -1,23 +1,8 @@
 version = 1
 
 [[analyzers]]
-name = "javascript"
+name = "java"
 enabled = true
 
   [analyzers.meta]
-  plugins = [
-    "react",
-    "angular",
-    "vue",
-    "ember",
-    "meteor",
-    "angularjs"
-  ]
-
-[[transformers]]
-name = "standardjs"
-enabled = true
-
-[[transformers]]
-name = "prettier"
-enabled = true
+  runtime_version = "11"
