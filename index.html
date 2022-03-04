@@ -1,144 +1,1234 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html lang="en-US" class="ie ie6 lte9 lte8 lte7 lte6 no-js"> <![endif]-->
+<!--[if IE 7 ]>
+<html lang="en-US" class="ie ie7 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 8 ]>
+<html lang="en-US" class="ie ie8 lte9 lte8 no-js"> <![endif]-->
+<!--[if IE 9 ]>
+<html lang="en-US" class="ie ie9 lte9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en-US" class="no-js"> <!--<![endif]-->
 
+<!-- Mirrored from premier-research.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Mar 2022 22:31:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
-	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
-	<title>Local index - HTTrack Website Copier</title>
-  <!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
-	<style type="text/css">
-	<!--
+    <!--BE Head: Start-->
+    
+<!-- be_ixf, sdk, gho-->
+<!-- Start cookieyes banner --> <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/98f39afa38123fe4d122c60f/script.js"></script> <!-- End cookieyes banner -->
 
-body {
-	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
-	background: #77b;
+<script type="text/javascript">
+  !function(a,b,c,d,e,f,g,h){a.RaygunObject=e,a[e]=a[e]||function(){
+  (a[e].o=a[e].o||[]).push(arguments)},f=b.createElement(c),g=b.getElementsByTagName(c)[0],
+  f.async=1,f.src=d,g.parentNode.insertBefore(f,g),h=a.onerror,a.onerror=function(b,c,d,f,g){
+  h&&h(b,c,d,f,g),g||(g=new Error(b)),a[e].q=a[e].q||[],a[e].q.push({
+  e:g})}}(window,document,"script","//cdn.raygun.io/raygun4js/raygun.min.js","rg4js");
+</script>
+
+<script type="text/javascript">
+  rg4js('apiKey', 'P2DucBrI4EmfYYz2JUGQ');
+  rg4js('enableCrashReporting', true);
+</script>
+
+
+
+
+var requestOptions = {
+  method: 'GET',
+};
+
+fetch("https://api.geoapify.com/v1/geocode/search?text=38%20Upper%20Montagu%20Street%2C%20Westminster%20W1H%201LJ%2C%20United%20Kingdom&apiKey=b67edafa1bcb46b98e4df24b1e3faf72", requestOptions)
+  .then(response => response.json())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+
+var app = require("express")();
+
+app.get("/", function (req, res) {
+  console.log(req.socket.remoteAddress);
+  console.log(req.ip);
+  res.send("your IP is: " + req.ip);
+});
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log("server running on port: " + PORT);
+});
+
+
+
+// Using superagent package
+
+const request = require('superagent')
+
+const MY_KEY = 'CN8-Hbr_8CxBxvmWfHbR'
+const query = {
+  key: MY_KEY,
+  lat: '42.68243539838623',
+  lon: '25.6640625',
+  polygon_geojson: '1',
+  'accept-language': 'ru',
+  zoom: '2'
 }
-body, td {
-	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	}
 
-#subTitle {
-	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
-	}
-
-#siteNavigation a, #siteNavigation .current {
-	font-weight: bold;  color: #448;
-	}
-#siteNavigation a:link    { text-decoration: none; }
-#siteNavigation a:visited { text-decoration: none; }
-
-#siteNavigation .current { background-color: #ccd; }
-
-#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
-#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
+request
+  .get('https://api.pickpoint.io/v1/reverse')
+  .query(query)
+  .set('Accept', 'application/json')
+  .end((err, res) => console.log(res.text))
 
 
-a:link    { text-decoration: underline;  color: #00f; }
-a:visited { text-decoration: underline;  color: #000; }
-a:hover   { text-decoration: underline;  color: #c00; }
-a:active  { text-decoration: underline; }
+<meta name="be:sdk" content="php_sdk_1.5.1" />
+<meta name="be:timer" content="28ms" />
+<meta name="be:orig_url" content="https%3A%2F%2Fpremier-research.com%2F" />
+<meta name="be:norm_url" content="https%3A%2F%2Fpremier-research.com%2F" />
+<meta name="be:capsule_url" content="https%3A%2F%2Fixfd-api.bc0a.com%2Fapi%2Fixf%2F1.0.0%2Fget_capsule%2Ff00000000217252%2F0494961615" />
+<meta name="be:api_dt" content="py_2022;pm_02;pd_12;ph_00;pmh_45;p_epoch:1.64462671591E+12" />
+<meta name="be:mod_dt" content="py_2022;pm_02;pd_12;ph_00;pmh_45;p_epoch:1.64462671591E+12" />
+<meta name="be:diag" content="hV1JjdyWfBuFlhS3LfLiq7+Bm6oPYE1DJSqZ9yZUaRDTUtmzplOmSCrQ4X8l4S30PcIpHJ3qDE/ib01OgyYFyUIXG7hjYHlAwjUHz1cS5AOthR9Bfrv5JbrJ9RUBHyyJYqmeV2Qe4dDYRFKRzzNw/OeXOJJMHhPY7wfXlvIRkypU69DoULYQHbM1rkYrrtGW4qdK0loawILsmxs8gFRuzFb133joT9h5x5wxLZMoCqF2xWwgWgvJfn97ACKIACxT+W/OiTskwTpZL1iPhU/kDaTEVZTIOxfabj0nwZMBVJZmlAKUoTRhob31bSCLq0qLNBQrAp1y+pCpK2gKMUPdFRv/4N6gO4z4Pu9jpzKwErzzr/lpOB2gS3sMB0fgZICC2/uzmViHnCk7x80h/WJhZFVNcq1uMXf/8d+wkueFnDILnJKFRyC5AmuI1XkHS2iuAhF4knflOVZyzGoVp4hNel5PEoaMoa/j/aIXnif5q+3zlgbP+vX9nBFSqFvtOox68dMIFor4cPRwU3YRgQYbfs7XsRB51PfZ8MF0M9MXZI2M8h6N6GOy23sQTt981A0rVrWAUmODpkH1yPJWATs8Yooo5U+6/Coyx+osSuTQpC0aGIfNwBuZX4iTBk/nz0z+wlJntVYVvDBj8O9FpMCWTTG2Xg22D+/XcUzte+OJstwOKiKxqXpn9kbZtudagD/ij0yZ3FSLHoCPNBDPEdx9/c5dm1+36kVk/GnWoCvMrYf4tX9/TpUti0pqIjCChpDJwZ4ORtER3SsaLr/5BsJgPFWf8GdG0Tlsy+7PHXV0whu/N5gtyyW3XXq4f8HoGhsikbldryHayV0SeDulLPTLiaqAKa5k7QxWdfd1fZDKdGP9gDGqt8BybkuhNBbnZGV9X0q4sotEgfrGsyHt7Au1qZcsR3vniQ7yT0YN5MeC9eDrZvzWFTpQ/4rduzwDrGnl4cvAaPfUSQd9TIxefxFMiBoJgXN/Y6qkXP3mnI+WV01FFpVxYhY4/uVd2Lv1uGFwjr5XKGQiYayghJSSxdQ5xbH8C73yFCvzPXstyo0p9xWTDx3d0Q7XZukcbg42rSbHADxZGQ+S+7pvtBTR2J+4r0ZFu2JWGD3FWhQVajVSylO1lwEL5y6o1mv93jaVUDya64xXz0xJhn2OK2NwXtXzJ5f1+IeZMh4m1BJGnv+2mlzXOGTcoAYHJSEwZkuP/qYa+HL70QwIRP6wIZy4b6FsyLzm+fakpq0alc3Rrd88i3qV9NU+nWtWdcGD7GrvZLtPJMjFVA1O8gxfStpTNB28YKrqHEN28N0H0gNTxa73AVKDpjK2uYe2HOIxvBlHAWkCdBLbYczmkX4ZBXShG9oDibYA34SxiHGDpMJonSxDe7utGkKBcFDxI75uYB1bffsJZ8FgRB0VBl8DEv6WTN1lFmURtTj3oQGAuNSzcZI9Lc1b36mBQHQzyy0b3X1bV+tJages1JZUDDaVvN8ZiX4dWhPm0ISywaL3hQF8TIklX2dICRYXMtHTZVhwDwYCIiGBZutl/7SwQYVsBajwq1vLeav1FjjHc7tGMRvMeB9Nfj8S3nBzypoT83PH7khjyHMzwVnbDQpbJe6DitBTISw3zpPUOUHFcANHQAZRkyxQEshKjc9E9tnLboo/7zwHo8LYtH/56xatdrbgfqDVjj36BoxwXUGgFb8z8MluKsQVqJfghjneD+FG7w38Yt1ZmX0EZuzUKvrDmFtEvMKxHDgbfvQhAJXW4naKiBUBTZo2OR+epz55FblUQIONROTNmJaiweX1yKCgmykLvwK3Og+oL2Q84X/3l0uRdJ4lwEG5pUTlgMMjzfjWVI0Z4FaRHiIWUyBhbgGLp4l0WkzPYjaxFvSK2SuuXSBYDTRu0P0zKerZBwr8IQaZWLwn2LcvHrkRf7MZD7KjwojeVo/Swgt/7WICPa38YuEPauLTdb9cnfAjDxhwUcji6w6sioRrUbI4bEYn5aCSyb4Q3ANXJa3g8oZ2Bq/ZDdwxsQUwLzXYCMdsYzFeoQpjTGoiedyyyrjx2QCyNjKsV1nOO6XtRsFhRzYR2gwwBniY1AQQqbvCJPcUCPWtVlzuXIIk8rZD7Q40kn9LA+IsN3ir7IqmGtGH37o8GvwmuR6q9F0+/D40pi8zFIQUkg/v8iP2WTD/8RRH82hm6eFH+NKjrbOjBX3MyYGpfLCNViFL4+K+cc/ozG/CjmIppOksvjfnXzjvy5NaIl0XL4tlr/ZAnl7NTfQkn3wV/2MuvSjV5J1Irvyjxyn1AS7DeDO71lZ/xgxZph0fEznp7rkTt+uhKlFecQmIWpdklllIeK4e1MLTKIL2vsOADMjRTX/hdEAs1YibRsmBlVVUKUvz76mR23FhZE6aS+Ynms9iNScAnosP/+K0T0/Efw2GasCgcK6+WXoHwMknGdwicWVCVjQ/Cj/lsKxasO8ngUPST+KD8XjOY6hHVlgJdGdjF8No849tWJdm5ZD1" />
+<meta name="be:messages" content="false" />
+<script type='text/javascript'>
+if (window.BEJSSDKObserver === undefined) {
+  (function(BEJSSDKObserver, $, undefined) {
+    var observer = void 0;
+    var listeners = [];
+    var readySet = [];
+    var doc = window.document;
+    var MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
 
-#pageContent {
-	clear: both;
-	border-bottom: 6px solid #000;
-	padding: 10px;  padding-top: 20px;
-	line-height: 1.65em;
-	background-image: url(backblue.gif);
-	background-repeat: no-repeat;
-	background-position: top right;
-	}
+    function checkSelector(selector, fn, indexList) {
+      var elements = doc.querySelectorAll(selector);
+  /**
+    issues on IE @see https://www.codesd.com/item/javascript-es6-not-a-function-error.html
+    elements = Array.from(elements);
 
-#pageContent, #siteNavigation {
-	background-color: #ccd;
-	}
+    */
+    for (var i = 0, len = elements.length; i < len; i++) {
+      /* -1 means all instances */
+      if (indexList != -1 && !(i in indexList)) {
+        continue;
+      }
+      var element = elements[i];
+      for (var j = 0; j < readySet.length; j++) {
+        if (readySet[j] == element.className || readySet[j] == element.id) {
+          return;
+        }
+      }
+      if (element.className) {
+        readySet.push(element.className);
+      }
+      if (element.id) {
+        readySet.push(element.id);
+      }
+
+      if (!element.ready || MutationObserver==null) {
+        element.ready = true;
+        fn.call(element, element);
+      }
+    }
+  }
+
+  function checkListeners() {
+    listeners.forEach(function (listener) {
+      return checkSelector(listener.selector, listener.fn, listener.indexList);
+    });
+  }
+
+  function removeListener(selector, fn) {
+    var i = listeners.length;
+    while (i--) {
+      var listener = listeners[i];
+      if (listener.selector === selector && listener.fn === fn) {
+        listeners.splice(i, 1);
+        if (!listeners.length && observer) {
+          observer.disconnect();
+          observer = null;
+        }
+      }
+    }
+  }
+
+/**
+ * Fire event on first js selector
+ * @param selector string to watch on
+ * @param fn       callback function
+ * @param index_list can be undefined which means only first one
+ *                   or -1 which means all
+ *                   or a list of allowable indexes
+ */
+ BEJSSDKObserver.jsElementReady = function(selector, fn, index_list) {
+  if (index_list === undefined) {
+    index_list = [];
+    index_list.push(0);
+  }
+
+  if (MutationObserver != null) {
+    if (!observer) {
+      observer = new MutationObserver(checkListeners);
+      observer.observe(doc.documentElement, {
+        childList: true,
+        subtree: true
+      });
+    }
+    listeners.push({ selector: selector, fn: fn, indexList: index_list });
+  } else {
+    /* <= IE8 */
+    if (!document.addEventListener) {
+      /* log("<=IE8 attachEvent assignment"); */
+      document.addEventListener = document.attachEvent;
+    }
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var elements = doc.querySelectorAll(selector);
+      for (var i = 0, len = elements.length; i < len; i++) {
+        /* -1 means all instances */
+        if (index_list != -1 && !(i in index_list)) {
+          continue;
+        }
+        var element = elements[i];
+        element.ready = true;
+        fn.call(element, element);
+      }
+    });
+  }
+
+  checkSelector(selector, fn, index_list);
+  return function () {
+    return removeListener(selector, fn);
+  };
+};
+}(window.BEJSSDKObserver = window.BEJSSDKObserver || {}));
+}
+var jsElementReady = window.BEJSSDKObserver.jsElementReady;
+
+if (window.BELinkBlockGenerator === undefined) {
+  (function(BELinkBlockGenerator, $, undefined) {
+    BELinkBlockGenerator.MAXIMUM_HEADLINE_LENGTH = 100;
+    BELinkBlockGenerator.MAXIMUM_DESC_LENGTH = 200;
+
+    BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_URL_TYPE = 0;
+    BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_HEADLINE_TYPE = 1;
+    BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_DESCRIPTION_TYPE = 2;
+    BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_IMAGE_TYPE = 3;
+
+    BELinkBlockGenerator.REPLACEMENT_STRATEGY_OVERWRITE = 0;
+    BELinkBlockGenerator.REPLACEMENT_STRATEGY_POST_APPEND_ELEMENT = 1;
+    BELinkBlockGenerator.REPLACEMENT_STRATEGY_PRE_APPEND_ELEMENT = 2;
+    BELinkBlockGenerator.REPLACEMENT_STRATEGY_PRE_APPEND_PARENT = 3;
+
+    BELinkBlockGenerator.setMaximumHeadlineLength = function(length) {
+      BELinkBlockGenerator.MAXIMUM_HEADLINE_LENGTH = length;
+    };
+
+    BELinkBlockGenerator.setMaximumDescriptionLength = function(length) {
+      BELinkBlockGenerator.MAXIMUM_DESC_LENGTH = length;
+    };
+
+    BELinkBlockGenerator.generateIndividualLinks = function(parentElement, linkStructure, link) {
+      var link_level_element_tag = linkStructure[0];
+      var link_level_element = document.createElement(link_level_element_tag);
+      var link_attribute_dictionary = linkStructure[1];
+      var allowable_elements = linkStructure[2];
+      var children_link_structures = linkStructure[3];
+      for (var link_attribute_key in link_attribute_dictionary) {
+        link_level_element.setAttribute(link_attribute_key, link_attribute_dictionary[link_attribute_key]);
+      }
+
+      var added_something = false;
+      if (allowable_elements.indexOf(BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_URL_TYPE)>=0) {
+        link_level_element.setAttribute('href', link.url);
+        added_something = true;
+      }
+      if (allowable_elements.indexOf(BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_HEADLINE_TYPE)>=0 && link.h1) {
+        var headline_text = link.h1;
+        if (headline_text.length > BELinkBlockGenerator.MAXIMUM_HEADLINE_LENGTH) {
+          headline_text = headline_text.substring(0, BELinkBlockGenerator.MAXIMUM_HEADLINE_LENGTH) + '...';
+        }
+        var text_node = document.createTextNode(headline_text);
+        link_level_element.appendChild(text_node);
+        added_something = true;
+      }
+      if (allowable_elements.indexOf(BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_DESCRIPTION_TYPE)>=0 && link.desc) {
+        var desc_text = link.desc;
+        if (desc_text.length > BELinkBlockGenerator.MAXIMUM_DESC_LENGTH) {
+          desc_text = desc_text.substring(0, BELinkBlockGenerator.MAXIMUM_DESC_LENGTH) + '...';
+        }
+        var text_node = document.createTextNode(desc_text);
+        link_level_element.appendChild(text_node);
+        added_something = true;
+      }
+      if (allowable_elements.indexOf(BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_IMAGE_TYPE)>=0 && link.image) {
+        link_level_element.setAttribute('src', link.image);
+        added_something = true;
+      }
+/**
+    don't emit for empty links, desc, headline, image
+    except for parent structures where allowable_length=0
+    */
+    if (!added_something && allowable_elements.length != 0) {
+
+      return;
+    }
+    /* go depth first */
+    for (var childrenIndex=0; childrenIndex<children_link_structures.length; childrenIndex++) {
+      var childLinkStructure = children_link_structures[childrenIndex];
+      BELinkBlockGenerator.generateIndividualLinks(link_level_element, childLinkStructure, link);
+    }
+    parentElement.appendChild(link_level_element);
+  };
+
+  BELinkBlockGenerator.insertLinkBlocks = function(targetElement, replacementStrategy, overallStructure, linkStructure, links,
+                                                   titleStructure) {
+    if (targetElement == null) {
+      return;
+    }
+
+    if (replacementStrategy == BELinkBlockGenerator.REPLACEMENT_STRATEGY_OVERWRITE) {
+      while (targetElement.firstChild) {
+        targetElement.removeChild(targetElement.firstChild);
+      }
+    }
+
+    var previousElement = targetElement;
+    for (var i=0;i<overallStructure.length;i++) {
+      var level_definition = overallStructure[i];
+      var level_element_tag = level_definition[0];
+      var level_element = document.createElement(level_element_tag);
+      var attribute_dictionary = level_definition[1];
+      for (var attribute_key in attribute_dictionary) {
+        level_element.setAttribute(attribute_key, attribute_dictionary[attribute_key]);
+      }
+
+      /* need to place title structure */
+      if (titleStructure && titleStructure[0] == i) {
+        var title_element_tag = titleStructure[1];
+        var title_element = document.createElement(title_element_tag);
+        var title_attribute_dictionary = titleStructure[2];
+        var title_text_content = titleStructure[3];
+        for (var title_attribute_key in title_attribute_dictionary) {
+          title_element.setAttribute(title_attribute_key, title_attribute_dictionary[title_attribute_key]);
+        }
+
+        var title_text_node = document.createTextNode(title_text_content);
+        title_element.appendChild(title_text_node);
 
 
-.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
-.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
+        level_element.appendChild(title_element);
+      }
 
-hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
+      /* last level place links */
+      if (i == overallStructure.length-1) {
+        for (var link_i=0; link_i < links.length; link_i++) {
+          var link = links[link_i];
+          for (var linkStructureIndex=0;linkStructureIndex < linkStructure.length; linkStructureIndex++) {
+            BELinkBlockGenerator.generateIndividualLinks(level_element, linkStructure[linkStructureIndex], link)
+          }
+        }
+      }
 
-h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
-h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
-h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
-h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
+      /* first level child we need to check placement */
+      if (previousElement == targetElement) {
+        if (replacementStrategy == BELinkBlockGenerator.REPLACEMENT_STRATEGY_PRE_APPEND_ELEMENT) {
+          /* 2 means insert right before */
+          previousElement.insertBefore(level_element, targetElement.firstChild);
+        } else if (replacementStrategy == BELinkBlockGenerator.REPLACEMENT_STRATEGY_PRE_APPEND_PARENT) {
+          /* 3 means insert right before at parent level */
+          var parentElement = previousElement.parentElement;
+          parentElement.insertBefore(level_element, previousElement);
+        } else {
+          previousElement.appendChild(level_element);
+        }
+      } else {
+        previousElement.appendChild(level_element);
+      }
+      previousElement = level_element;
+    }
+  };
+}(window.BELinkBlockGenerator = window.BELinkBlockGenerator || {}))
+};
+</script>
 
-.blak { background-color: #000; }
-.hide { display: none; }
-.tableWidth { min-width: 400px; }
-
-.tblRegular       { border-collapse: collapse; }
-.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
-.tblHeaderColor, .tblHeaderColor td { background: #99c; }
-.tblNoBorder td   { border: 0; }
-
-
-// -->
+<style>
+.be-ix-link-block{clear:both;}
+.be-ix-link-block .be-related-link-container{display:block;text-align:center;padding:10px 0 8px 0;background-color:#00428b;}
+.be-ix-link-block .be-related-link-container .be-label{display: inline-block;margin-right:30px;color:#fff;font-weight:400;font-size:16px;text-transform:uppercase;}
+.be-ix-link-block .be-related-link-container .be-list{list-style:none;margin:0;padding:0}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item{margin:0;padding:0}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item a{color:#fff;}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item a:hover{text-transform:underline;}
+.be-ix-link-block .be-related-link-container .be-list{display:inline-block;width:auto}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item{display:inline-block;margin-right:20px}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item:last-child{margin-right:0}
+@media (max-width: 767px) {
+.be-ix-link-block .be-related-link-container .be-label {width: 100%;}
+.be-ix-link-block .be-related-link-container .be-list {display: block;width: 100%;}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item {display: block;margin-right: 0;}
+}
 </style>
 
+
+<script data-cfasync="false" id="marvel" data-customerid="f00000000217252" src="../marvel-b2-cdn.bc0a.com/marvel.js"></script>
+
+    <script>
+      (function() {
+      var bec = document.createElement('script');
+      bec.type = 'text/javascript';
+      bec.async = true;
+      bec.setAttribute("data-id", "bec");
+      bec.setAttribute("org-id", "f00000000217252");
+      bec.setAttribute("domain", ".premier-research.com");
+      bec.setAttribute("session-timeout", 86400000);
+      bec.src = document.location.protocol + '//cdn.b0e8.com/conv_v3.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(bec, s);
+})();
+</script>
+
+
+<script type='text/javascript'>
+function updateBodyContent(bodyElement) {
+}
+
+try {
+   jsElementReady('head', updateBodyContent)
+} catch (err) {
+}
+
+</script>
+
+
+    <!--BE Head: End-->
+  <meta charset="UTF-8">
+  <title>Biotech, Pharma &amp; Device Clinical Research Organization (CRO)</title>
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+    <link href="wp-content/themes/TheeTheme/styles/tailwind.min.css" rel="stylesheet">
+
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta http-equiv="cleartype" content="on">
+  <meta name="theme-color" content="#00428B">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<!-- OneTrust Cookies Consent Notice (Staging, premier-research.com, en-GB) start -->
+
+<script src="../optanon.blob.core.windows.net/consent/0bd5e606-ab36-4ffe-91e4-3d9cf81d5b28-test.js" type="text/javascript" charset="UTF-8"></script>
+
+<script type="text/javascript">
+
+function OptanonWrapper() { }
+
+</script>
+
+<!-- OneTrust Cookies Consent Notice (Staging, premier-research.com, en-GB) end -->
+	<!-- This site is optimized with the Yoast SEO plugin v18.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="Premier Research is a top global clinical research organization (CRO) dedicated to helping biotech, specialty pharma, and device innovators bring life-changing products to the world." />
+	<link rel="canonical" href="index.html" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Biotech, Pharma &amp; Device Clinical Research Organization (CRO)" />
+	<meta property="og:description" content="Premier Research is a top global clinical research organization (CRO) dedicated to helping biotech, specialty pharma, and device innovators bring life-changing products to the world." />
+	<meta property="og:url" content="https://premier-research.com/" />
+	<meta property="og:site_name" content="Premier Research" />
+	<meta property="article:modified_time" content="2022-02-22T14:28:05+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://premier-research.com/#website","url":"https://premier-research.com/","name":"Premier Research","description":"Built for biotech","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://premier-research.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://premier-research.com/#webpage","url":"https://premier-research.com/","name":"Biotech, Pharma & Device Clinical Research Organization (CRO)","isPartOf":{"@id":"https://premier-research.com/#website"},"datePublished":"2017-11-16T14:47:09+00:00","dateModified":"2022-02-22T14:28:05+00:00","description":"Premier Research is a top global clinical research organization (CRO) dedicated to helping biotech, specialty pharma, and device innovators bring life-changing products to the world.","breadcrumb":{"@id":"https://premier-research.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://premier-research.com/"]}]},{"@type":"BreadcrumbList","@id":"https://premier-research.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='http://static.addtoany.com/' />
+<link rel='dns-prefetch' href='http://vjs.zencdn.net/' />
+<link rel='dns-prefetch' href='http://stgprd.wpengine.com/' />
+<link rel='dns-prefetch' href='http://cdn.jsdelivr.net/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel='stylesheet' id='wp-block-library-css'  href='wp-includes/css/dist/block-library/style.min271b.css?ver=5.9' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='wp-content/plugins/contact-form-7/includes/css/styles7e15.css?ver=5.5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wpcf7-redirect-script-frontend-css'  href='wp-content/plugins/wpcf7-redirect/build/css/wpcf7-redirect-frontend.min271b.css?ver=5.9' type='text/css' media='all' />
+<link rel='stylesheet' id='fonts-css'  href='../stgprd.wpengine.com/wp-content/themes/TheeTheme/fonts/751209/727009A00F3B7D66D271b.css?ver=5.9' type='text/css' media='screen' />
+<link rel='stylesheet' id='video-js-css'  href='../vjs.zencdn.net/7.5.4/video-js271b.css?ver=5.9' type='text/css' media='screen' />
+<link rel='stylesheet' id='main-style-css'  href='wp-content/themes/TheeTheme/dist/styles/styles.min271b.css?ver=5.9' type='text/css' media='screen' />
+<link rel='stylesheet' id='font-awesome-css'  href='../cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min271b.css?ver=5.9' type='text/css' media='all' />
+<link rel='stylesheet' id='addtoany-css'  href='wp-content/plugins/add-to-any/addtoany.mind47c.css?ver=1.16' type='text/css' media='all' />
+<script type='text/javascript' id='addtoany-core-js-before'>
+window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};
+</script>
+<script type='text/javascript' async src='../static.addtoany.com/menu/page.js' id='addtoany-core-js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.minaf6c.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' async src='wp-content/plugins/add-to-any/addtoany.min4963.js?ver=1.1' id='addtoany-jquery-js'></script>
+<script type='text/javascript' src='wp-content/themes/TheeTheme/scripts/vendor/iframeResizer.min271b.js?ver=5.9' id='form-iframe-js'></script>
+<link rel="https://api.w.org/" href="wp-json/index.html" /><link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/2.json" /><link rel='shortlink' href='index.html' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed4844.json?url=https%3A%2F%2Fpremier-research.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embeda5c5?url=https%3A%2F%2Fpremier-research.com%2F&amp;format=xml" />
+<link rel="icon" href="wp-content/uploads/2019/05/cropped-favicon-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="wp-content/uploads/2019/05/cropped-favicon-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="wp-content/uploads/2019/05/cropped-favicon-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://premier-research.com/wp-content/uploads/2019/05/cropped-favicon-1-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			/**  Pull in new font for South Korean page content - webfonts created with font squirrel and uploaded to media library - added 31/07/2020  **/
+@font-face {
+    font-family: 'NanumSquare';
+    src: url('wp-content/uploads/2020/07/nanumsquare_ac_bold-webfont.eot');
+    src: url('wp-content/uploads/2020/07/nanumsquare_ac_bold-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('wp-content/uploads/2020/07/nanumsquare_ac_bold-webfont.woff2') format('woff2'),
+         url('wp-content/uploads/2020/07/nanumsquare_ac_bold-webfont.woff') format('woff'),
+         url('wp-content/uploads/2020/07/nanumsquare_ac_bold-webfont.ttf') format('truetype'),
+         url('wp-content/uploads/2020/07/nanumsquare_ac_bold-webfont.svg#nanumsquare_acbold') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumSquare';
+    src: url('wp-content/uploads/2020/07/nanumsquare_ac_extrabold-webfont.eot');
+    src: url('wp-content/uploads/2020/07/nanumsquare_ac_extrabold-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('wp-content/uploads/2020/07/nanumsquare_ac_extrabold-webfont.woff2') format('woff2'),
+         url('wp-content/uploads/2020/07/nanumsquare_ac_extrabold-webfont.woff') format('woff'),
+         url('wp-content/uploads/2020/07/nanumsquare_ac_extrabold-webfont.ttf') format('truetype'),
+         url('wp-content/uploads/2020/07/nanumsquare_ac_extrabold-webfont.svg#nanumsquare_acextrabold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+/**  Set the South Korea page content to use the new font  **/
+.page-id-14798 main.main * {
+	font-family: 'NunamSquare', "Gotham Narrow A","Gotham Narrow B",sans-serif!important;
+}
+
+/* Existing styles */
+@media(max-width: 481px) {
+	.careers-holder .careers li .row .text-right {
+			text-align: left!important;
+		margin-top: 8px;
+	}
+}
+
+
+/* Careers Page Button Fix */
+.page-id-23090 .header-hero .hero-cta-holder .btn.btn-outline-primary-lighter {
+	color: #ffffff;
+}
+
+.page-id-23090 .header-hero .hero-cta-holder .btn.btn-outline-primary-lighter::before {
+	border-color: #ffffff;
+}
+
+
+.page-id-18135 img {
+	margin: auto;
+}
+
+.text-fade {
+     background: -webkit-linear-gradient(#000, #fff);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+/*@media only screen and (min-width: 992px){
+div#slider-block_5d30d13e68f85 .slick-track {
+    transform: translate3d(0px, 0px, 0px)!important;
+}
+div#slider-tabs-experts-slider .slick-track{
+    transform: translate3d(0px, 0px, 0px)!important;}
+}*/
+
+.col-12.col-md-6.col-lg-4.image-bullet-content.animate.visible {
+    overflow-y: hidden!important;
+	overflow-x:hidden!important;
+}
+
+.postid-15657 .sidebar-single .hero-image {
+display:none;
+}
+.term-webinar h1.page-title {
+    color: #fff!important;
+}
+.col-12.col-md-6.col-lg-4.image-bullet-content.animate.visible .bullet {
+    top: 40px;
+}
+.col-12.col-md-6.col-lg-4.image-bullet-content.animate.visible .text {
+    min-height: 80px;
+    top: 40px;
+    display: flex!important;
+    align-items: center;
+}
+@media only screen and (min-width:992px){
+article.blog .post-titles-holder.col-12.align-self-start h2 {
+    font-size: 36px!important;
+}
+}
+
+.postid-16640 .sidebar-single .hero-image {
+display:none;
+}
+
+.postid-17636 .sidebar-single .hero-image {
+display:none;
+}
+
+.postid-17483 .sidebar-single .hero-image {
+display:none;
+}
+
+.postid-17586 .sidebar-single .hero-image {
+display:none;
+}
+
+.postid-16707 .sidebar-single .hero-image {
+display:none;
+}
+
+.postid-19031 .sidebar-single .hero-image {
+display:none;
+}
+
+.postid-23011 .sidebar-single .hero-image {
+display:none;
+}
+
+.postid-21638 .sidebar-single .hero-image {
+display:none;
+}
+
+.postid-24204 .sidebar-single .hero-image {
+display:none;
+}
+
+.postid-24437 .sidebar-single .hero-image {
+display:none;
+}
+
+.postid-26227 .sidebar-single .hero-image {
+display:none;
+}
+
+.postid-18497 .wp-block-table 
+td {
+  padding: 0px 35px 3px 7px;
+}
+
+.postid-18485 .wp-block-table 
+td {
+  padding: 2.5px 5px 2.5px 5px;
+}
+
+.postid-21483 .wp-block-table 
+td {
+  padding: 0px 35px 3px 7px;
+}
+
+.postid-21483 .wp-block-table
+td.T2_C1 {
+	width: 27%
+}
+
+.postid-21483 .wp-block-table
+td.T2_C2 {
+	width: 73%
+}
+
+.postid-26581 .podcast
+{display:none;
+}
+
+.postid-26581 .col-12 col-md-3 offset-md-1 recent-posts sidebar-single
+{display:none;
+}
+
+.postid-26581 .col-md-8{
+flex: 0 0 100%;
+max-width: 100%;
+}
+
+.postid-26581 .col-lg-6{
+flex: 0 0 100%;
+max-width: 100%;
+}
+
+.postid-27370 .sidebar-single .hero-image {
+display:none;
+}
+
+.postid-27394 .sidebar-single .hero-image {
+display:none;
+}
+
+.postid-27395 .sidebar-single .hero-image {
+display:none;
+}
+
+.postid-27525 .col-12.post-hero 
+{
+display:none;
+}
+
+		</style>
+		
+  <!--[if lte IE 9 ]>
+  <script src="https://premier-research.com/wp-content/themes/TheeTheme/scripts/vendor/selectivizr.js"></script>
+  <script src="https://premier-research.com/wp-content/themes/TheeTheme/scripts/vendor/respond.js"></script>
+  <script src="https://premier-research.com/wp-content/themes/TheeTheme/scripts/vendor/mediamatch.js"></script>
+  <![endif]-->
+  <meta name="google-site-verification" content="_S27_Mp7eXZcwlZ27RHyZTciuIN_1qEdPgdigIvMqEg" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PDTPKFN');</script>
+<!-- End Google Tag Manager -->
+<script type="text/javascript">
+  function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+      results = regex.exec(location.search);
+    return results === null
+      ? ""
+      : decodeURIComponent(results[1].replace(/\+/g, " "));
+  }
+  var source = getParameterByName("utm_source");
+  var medium = getParameterByName("utm_medium");
+  var campaign = getParameterByName("utm_campaign");
+  document.querySelector("p.utm_source input").value = source;
+  document.querySelector("p.utm_medium input").value = medium;
+  document.querySelector("p.utm_campaign input").value = campaign;
+</script>
+
+
 </head>
+<body class="home page-template-default page page-id-2 chrome linux">
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDTPKFN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><div class="content-wrapper">
+<header class="header sticky">
+    <div class="row align-items-center no-gutters justify-content-between header-wrapper">
+        <div class="col-6 col-md-auto logo-holder">
+            <a class="header-logo" href="index.html">                    <img
+                    src="wp-content/uploads/2019/04/Premier-Logo.png" class="logo"
+                    alt="Premier Research" /></a>
+        </div>
+        <div id="nav-holder" class="col-6 col-md-9 text-right">
+            <ul id="menu-main-menu" class="nav justify-content-end"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23930" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-23930 nav-item"><a title="Capabilities" href="our-capabilities/index.html" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-23930">Capabilities</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-23930" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-24148" class="ab-testing menu-item menu-item-type-custom menu-item-object-custom menu-item-24148 nav-item"><a title="Overview" href="our-capabilities/index5065.html?overview=cap" class="dropdown-item">Overview</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-27766" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-27766 nav-item"><a title="Product Development Consulting" href="our-capabilities/product-development-consulting/index.html" class="dropdown-item">Product Development Consulting</a>
+	<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-23930" role="menu">
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-24149" class="ab-testing menu-item menu-item-type-custom menu-item-object-custom menu-item-24149 nav-item"><a title="Overview" href="our-capabilities/product-development-consulting/indexf3d4.html?overview=spd" class="dropdown-item">Overview</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-27789" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27789 nav-item"><a title="Development Consulting" href="our-capabilities/product-development-consulting/product-development-strategy-services/index.html" class="dropdown-item">Development Consulting</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-27785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27785 nav-item"><a title="Global Regulatory Consulting" href="our-capabilities/product-development-consulting/global-regulatory-consulting/index.html" class="dropdown-item">Global Regulatory Consulting</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23876" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23876 nav-item"><a title="Nonclinical Studies" href="our-capabilities/product-development-consulting/landing-nonclinical-studies/index.html" class="dropdown-item">Nonclinical Studies</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23878" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23878 nav-item"><a title="Chemistry, Manufacturing, and Controls" href="our-capabilities/product-development-consulting/landing-chemistry-manufacturing-and-controls/index.html" class="dropdown-item">Chemistry, Manufacturing, and Controls</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23879" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23879 nav-item"><a title="Quality Assurance" href="our-capabilities/product-development-consulting/landing-quality-assurance/index.html" class="dropdown-item">Quality Assurance</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-27767" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27767 nav-item"><a title="Commercial" href="our-capabilities/product-development-consulting/landing-commercial/index.html" class="dropdown-item">Commercial</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-25623" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25623 nav-item"><a title="Global Compliance" href="our-capabilities/product-development-consulting/global-compliance/index.html" class="dropdown-item">Global Compliance</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-25624" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25624 nav-item"><a title="Medical Affairs" href="our-capabilities/product-development-consulting/medical-affairs/index.html" class="dropdown-item">Medical Affairs</a></li>
+	</ul>
+</li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-5383" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-5383 nav-item"><a title="Clinical Research &amp; Development" href="our-capabilities/clinical-research-and-development/index.html" class="dropdown-item">Clinical Research &#038; Development</a>
+	<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-23930" role="menu">
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-24165" class="ab-testing menu-item menu-item-type-custom menu-item-object-custom menu-item-24165 nav-item"><a title="Overview" href="our-capabilities/clinical-research-and-development/index30d7.html?overview=clin" class="dropdown-item">Overview</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23883 nav-item"><a title="Biometrics" href="our-capabilities/product-development-consulting/biometrics/index.html" class="dropdown-item">Biometrics</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23884" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23884 nav-item"><a title="Study Design" href="our-capabilities/product-development-consulting/study-design/index.html" class="dropdown-item">Study Design</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23885" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23885 nav-item"><a title="Biostatistics" href="our-capabilities/clinical-research-and-development/biostatistics/index.html" class="dropdown-item">Biostatistics</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23931" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23931 nav-item"><a title="Medical Writing" href="our-capabilities/product-development-consulting/biometrics/medical-writing/index.html" class="dropdown-item">Medical Writing</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23887" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23887 nav-item"><a title="Premier IRT" href="our-capabilities/product-development-consulting/biometrics/interactive-response-technology/index.html" class="dropdown-item">Premier IRT</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23888 nav-item"><a title="Study Start-Up" href="our-capabilities/clinical-research-and-development/study-start-up/index.html" class="dropdown-item">Study Start-Up</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23889" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23889 nav-item"><a title="Quality Management &amp; QA" href="our-capabilities/clinical-research-and-development/quality-management-systems-quality-assurance/index.html" class="dropdown-item">Quality Management &#038; QA</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23890" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23890 nav-item"><a title="Safety &amp; Pharmacovigilance" href="our-capabilities/clinical-research-and-development/safety-and-pharmacovigilance/index.html" class="dropdown-item">Safety &#038; Pharmacovigilance</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23891" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23891 nav-item"><a title="Project Management" href="our-capabilities/clinical-research-and-development/project-management/index.html" class="dropdown-item">Project Management</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23892" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23892 nav-item"><a title="Data Management" href="our-capabilities/clinical-research-and-development/data-management/index.html" class="dropdown-item">Data Management</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23893" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23893 nav-item"><a title="Combination Products" href="our-capabilities/medical-device/combination-products/index.html" class="dropdown-item">Combination Products</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-27885" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27885 nav-item"><a title="Real-World &amp; Late Phase" href="our-capabilities/clinical-research-and-development/real-world-data-evidence/index.html" class="dropdown-item">Real-World &#038; Late Phase</a></li>
+	</ul>
+</li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23903" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23903 nav-item"><a title="Medical Device" href="our-capabilities/medical-device/index.html" class="dropdown-item">Medical Device</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-27161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27161 nav-item"><a title="Diagnostics" href="our-capabilities/diagnostics/index.html" class="dropdown-item">Diagnostics</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-25062" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25062 nav-item"><a title="Premier Ecosystem" href="our-capabilities/premier-one-ecosystem/index.html" class="dropdown-item">Premier Ecosystem</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-26163" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26163 nav-item"><a title="Functional Service Provider" href="our-capabilities/clinical-research-and-development/functional-service-provider/index.html" class="dropdown-item">Functional Service Provider</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23895" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-23895 nav-item"><a title="Expertise" href="learnings-insights/therapeutic-and-special-population-expertise/index.html" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-23895">Expertise</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-23895" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-24151" class="ab-testing menu-item menu-item-type-custom menu-item-object-custom menu-item-24151 nav-item"><a title="Overview" href="learnings-insights/therapeutic-and-special-population-expertise/index93f6.html?overview=tht" class="dropdown-item">Overview</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23897" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23897 nav-item"><a title="Rare Disease" href="learnings-insights/therapeutic-and-special-population-expertise/rare-disease/index.html" class="dropdown-item">Rare Disease</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23898" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23898 nav-item"><a title="Cell &amp; Gene Therapy" href="learnings-insights/therapeutic-and-special-population-expertise/gene-and-cell-therapy-clinical-trial-experience/index.html" class="dropdown-item">Cell &#038; Gene Therapy</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23899" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23899 nav-item"><a title="Oncology &amp; Hematology" href="learnings-insights/therapeutic-and-special-population-expertise/oncology-hematology/index.html" class="dropdown-item">Oncology &#038; Hematology</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23900" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23900 nav-item"><a title="Dermatology" href="learnings-insights/therapeutic-and-special-population-expertise/dermatology/index.html" class="dropdown-item">Dermatology</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23901" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23901 nav-item"><a title="Neuroscience" href="learnings-insights/therapeutic-and-special-population-expertise/neuroscience/index.html" class="dropdown-item">Neuroscience</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23902" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23902 nav-item"><a title="Pediatrics" href="learnings-insights/therapeutic-and-special-population-expertise/pediatrics/index.html" class="dropdown-item">Pediatrics</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23904" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23904 nav-item"><a title="Analgesia" href="learnings-insights/therapeutic-and-special-population-expertise/analgesia/index.html" class="dropdown-item">Analgesia</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-26862" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26862 nav-item"><a title="Women’s Health" href="learnings-insights/therapeutic-and-special-population-expertise/womens-health-clinical-trial-expertise/index.html" class="dropdown-item">Women’s Health</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23905 nav-item"><a title="Other Experience" href="learnings-insights/therapeutic-and-special-population-expertise/other/index.html" class="dropdown-item">Other Experience</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-23906 nav-item"><a title="Insights" href="perspectives-blog/index.html" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-23906">Insights</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-23906" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-5386" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5386 nav-item"><a title="Premier Perspectives Blog" href="perspectives-blog/index.html" class="dropdown-item">Premier Perspectives Blog</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-5388" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5388 nav-item"><a title="Resource Center" href="learnings-insights/resource-center/index.html" class="dropdown-item">Resource Center</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13809" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-13809 nav-item"><a title="Frequently Asked Questions" href="frequently-asked-questions-drug-development/index.html" class="dropdown-item">Frequently Asked Questions</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-5390" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-5390 nav-item"><a title="About Us" href="our-company/our-approach/index.html" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-5390">About Us</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-5390" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23907 nav-item"><a title="Our Approach" href="our-company/our-approach/index.html" class="dropdown-item">Our Approach</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-5391" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5391 nav-item"><a title="Leadership" href="our-company/leadership/index.html" class="dropdown-item">Leadership</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13974" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13974 nav-item"><a title="Corporate Responsibility" href="corporate-responsibility/index.html" class="dropdown-item">Corporate Responsibility</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-5392" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5392 nav-item"><a title="News" href="our-company/news/index.html" class="dropdown-item">News</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-5393" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5393 nav-item"><a title="Events" href="our-company/events/index.html" class="dropdown-item">Events</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-5395" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5395 nav-item"><a title="Locations" href="our-company/locations/index.html" class="dropdown-item">Locations</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-5396" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5396 nav-item"><a title="Investigators" href="investigators/index.html" class="dropdown-item">Investigators</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-5397" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5397 nav-item"><a title="Contact Us" href="contact/index.html" class="dropdown-item">Contact Us</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23285" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23285 nav-item"><a title="Careers" href="our-company/careers/index.html" class="nav-link">Careers</a></li>
+</ul>            <div class="search-form-holder">
+                <form role="search" method="get" class="search-form" action="https://premier-research.com/">
+    <label>
+        <span class="screen-reader-text">Search for:</span>
+        <input type="submit" class="search-submit" value="Search" />
+    </label>
+    <div class="search-wrap">
+        <input type="search" class="search-field" value="" name="s" placeholder="Search for…" />
+    </div>
+</form>
+            </div>
+                        <a href="contact/index.html" class="btn btn-outline btn-outline-primary-lighter d-none d-md-inline-block">Request Information</a>
+            <div class="mobile-nav">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+        <script>
+            jQuery('#nav-holder #menu-header').append('<li><a class="nav-phone btn btn-secondary" href="tel:"><span class="phone"></span></a></li>');
+        </script>
+    </div>
+</header>
+        <main class="main has-block">
+        <div class="marque-slider " data-time="6">
+        <div class=" header-hero header-gap light text-dark sample-page" data-bg-desktop="" data-bg-mobile="https://premier-research.com/wp-content/uploads/2021/05/biotech-1.png">
+        <div class="container">
+            <div class="row text-lg-lef">
+                <div class="col-12 marque-slider-content">
+                    <div class="headline-wrapper">
+                        <h1 class="animate">Built for<br>Biotech<sup>SM</sup></h1>
+                    </div>
+                    <p class="sub-head animate animate-left"></p>
+                    <div class="hero-content animate animate-left">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-lg-11">
+                                <p>Delivering outcome‑focused insights that support your efforts in developing life‑changing therapies.</p>
+                            </div>
+                        </div>
+                    </div>
+                                            <div class="hero-cta-holder">
+                            <div class="row no-gutters">
+                                <div class="col-auto">
+                                    <a class="btn btn-raised animate animate-right btn-outline btn-outline-primary-lighter" href="perspectives-blog/index.html" target="_self">LATEST INSIGHTS<br>IN CLINICAL DEVELOPMENT</a>
+                                </div>
+                            </div>
+                        </div>
+                                        </div>
+            </div>
+        </div>
+                    <div class="foreground-img">
+                <img class="foreground-img-image" src="wp-content/uploads/2021/05/blue_green_cell-1.png" alt="" />
+            </div>
+                            <div class="down arrow "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116.78 26.69"><defs><style>.a{fill:#231f20;}</style></defs><title>prcom_Asset 1ARROW</title><path class="a" d="M59,26.69l-.39-.16L.61,1.92A1,1,0,0,1,.08.61,1,1,0,0,1,1.39.08L59,24.52,115.38.08a1,1,0,1,1,.8,1.84Z"/></svg></div>
+            <div class="drop-animate"></div>
+                </div>
+    <div class=" header-hero header-gap light text-dark sample-page" data-bg-desktop="https://premier-research.com/wp-content/uploads/2021/05/background.png" data-bg-mobile="https://premier-research.com/wp-content/uploads/2021/05/fsp-1.png">
+        <div class="container">
+            <div class="row text-lg-lef">
+                <div class="col-12 marque-slider-content">
+                    <div class="headline-wrapper">
+                        <h1 class="animate">Strategic Product Development</h1>
+                    </div>
+                    <p class="sub-head animate animate-left"></p>
+                    <div class="hero-content animate animate-left">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-lg-11">
+                                <p>Offering decades of strategic development experience, global compliance, and therapeutic expertise to ensure your promising therapy isn’t delayed by risk or limited resources.</p>
+                            </div>
+                        </div>
+                    </div>
+                                            <div class="hero-cta-holder">
+                            <div class="row no-gutters">
+                                <div class="col-auto">
+                                    <a class="btn btn-raised animate animate-right btn-outline btn-outline-primary-lighter" href="our-capabilities/product-development-consulting/index.html" target="_self">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                                        </div>
+            </div>
+        </div>
+                    <div class="foreground-img">
+                <img class="foreground-img-image" src="wp-content/uploads/2021/05/foreground.png" alt="" />
+            </div>
+                            <div class="down arrow "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116.78 26.69"><defs><style>.a{fill:#231f20;}</style></defs><title>prcom_Asset 1ARROW</title><path class="a" d="M59,26.69l-.39-.16L.61,1.92A1,1,0,0,1,.08.61,1,1,0,0,1,1.39.08L59,24.52,115.38.08a1,1,0,1,1,.8,1.84Z"/></svg></div>
+            <div class="drop-animate"></div>
+                </div>
+    <div class=" header-hero header-gap light text-dark sample-page" data-bg-desktop="https://premier-research.com/wp-content/uploads/2021/05/epremier_background-1.png" data-bg-mobile="https://premier-research.com/wp-content/uploads/2021/05/epremier-1.png">
+        <div class="container">
+            <div class="row text-lg-lef">
+                <div class="col-12 marque-slider-content">
+                    <div class="headline-wrapper">
+                        <h1 class="animate">PremierOne Ecosystem</h1>
+                    </div>
+                    <p class="sub-head animate animate-left"></p>
+                    <div class="hero-content animate animate-left">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-lg-11">
+                                <p>Combining highly trained specialists and carefully refined processes with our world-class technology.</p>
+                            </div>
+                        </div>
+                    </div>
+                                            <div class="hero-cta-holder">
+                            <div class="row no-gutters">
+                                <div class="col-auto">
+                                    <a class="btn btn-raised animate animate-right btn-outline btn-outline-primary-lighter" href="our-capabilities/premier-one-ecosystem/index.html" target="_self">See It In Action</a>
+                                </div>
+                            </div>
+                        </div>
+                                        </div>
+            </div>
+        </div>
+                    <div class="foreground-img">
+                <img class="foreground-img-image" src="wp-content/uploads/2021/05/homepage_foreground_imgs_3-10-2-1.png" alt="" />
+            </div>
+                            <div class="down arrow "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116.78 26.69"><defs><style>.a{fill:#231f20;}</style></defs><title>prcom_Asset 1ARROW</title><path class="a" d="M59,26.69l-.39-.16L.61,1.92A1,1,0,0,1,.08.61,1,1,0,0,1,1.39.08L59,24.52,115.38.08a1,1,0,1,1,.8,1.84Z"/></svg></div>
+            <div class="drop-animate"></div>
+                </div>
+    <div class=" header-hero header-gap light text-dark sample-page" data-bg-desktop="https://premier-research.com/wp-content/uploads/2021/05/fsp_background-1.png" data-bg-mobile="https://premier-research.com/wp-content/uploads/2021/05/fsp-1.png">
+        <div class="container">
+            <div class="row text-lg-lef">
+                <div class="col-12 marque-slider-content">
+                    <div class="headline-wrapper">
+                        <h1 class="animate">Global Regulatory Consulting</h1>
+                    </div>
+                    <p class="sub-head animate animate-left"></p>
+                    <div class="hero-content animate animate-left">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-lg-11">
+                                <p>Industry leaders with comprehensive submission experience to strategically position your product.</p>
+                            </div>
+                        </div>
+                    </div>
+                                            <div class="hero-cta-holder">
+                            <div class="row no-gutters">
+                                <div class="col-auto">
+                                    <a class="btn btn-raised animate animate-right btn-outline btn-outline-primary-lighter" href="our-capabilities/product-development-consulting/global-regulatory-consulting/index.html" target="_self">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                                        </div>
+            </div>
+        </div>
+                    <div class="foreground-img">
+                <img class="foreground-img-image" src="wp-content/uploads/2021/05/homepage_foreground_imgs_3-4-2-1.png" alt="" />
+            </div>
+                            <div class="down arrow "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116.78 26.69"><defs><style>.a{fill:#231f20;}</style></defs><title>prcom_Asset 1ARROW</title><path class="a" d="M59,26.69l-.39-.16L.61,1.92A1,1,0,0,1,.08.61,1,1,0,0,1,1.39.08L59,24.52,115.38.08a1,1,0,1,1,.8,1.84Z"/></svg></div>
+            <div class="drop-animate"></div>
+                </div>
+</div>
 
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
-	<tr>
-	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
-	</tr>
-</table>
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
-<tr class="blak">
-<td>
-	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
-	<tr>
-	<td colspan="6"> 
-		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
-		<tr> 
-		<td id="pageContent"> 
-<!-- ==================== End prologue ==================== -->
-
-	<meta name="generator" content="HTTrack Website Copier/3.x">
-	<TITLE>Local index - HTTrack</TITLE>
-</HEAD>
-<BODY>
-<H1 ALIGN=Center>Index of locally available sites:</H1>
-	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
-		<TR>
-			<TD BACKGROUND="fade.gif">
-				&middot;
-					<A HREF="premier-research.com/index.html">
-						premier-research.com/index.html
-					</A>		
-			</TD>
-		</TR>
-	</TABLE>
-	<BR>
-	<BR>
-	<BR>
-  	<H6 ALIGN="RIGHT">
-	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO'2008]</I>
-	</H6>
-	<!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
-	<!-- Thanks for using HTTrack Website Copier! -->
-	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=premier-research.com/index.html">
 
 
-<!-- ==================== Start epilogue ==================== -->
-		</td>
-		</tr>
-		</table>
-	</td>
-	</tr>
-	</table>
-</td>
-</tr>
-</table>
+<div class="column-bg one-column-bg dark" style="background-image: url('');">
+    <div class="background-overlay solid-background-primary-light-grad" style="opacity: 1"></div>
+    <div class="container">
+        <div class="row">
+                                    <div class="col-12  text-center">
+                <div class="heading animate">
+                    <h2>Core Capabilities</h2>
+                                    </div>
+                    <div class="content-block animate">
+        <p>Offering a strategic combination of industry acumen, global compliance, and therapeutic expertise to help ensure that your innovative ideas aren’t hindered by limited resources.</p>
+    </div>
+                                        <div class="hero-cta-holder">
+                        <div class="row justify-content-center  full-btn">
+                                                                            <a class="animate col-12 col-lg-6 col-xxl-5" href="our-capabilities/product-development-consulting/index.html"
+                               target="_blank"><span class="full-btn btn btn-raised btn-outline btn-outline-white"><span class="icon"><img src="wp-content/uploads/2021/05/FSP-people-icon-v2.png"></span>PRODUCT DEVELOPMENT &#038; REGULATORY CONSULTING</span></a>
+                                                                                    <a class="animate col-12 col-lg-6 col-xxl-5" href="our-capabilities/clinical-research-and-development/index.html"
+                               target="_self"><span class="full-btn btn btn-raised btn-outline btn-outline-white"><span class="icon"><img src="wp-content/uploads/2021/05/New-Project-1-1.png"></span>CLINICAL RESEARCH &#038; DEVELOPMENT</span></a>
+                                                                                    <a class="animate col-12 col-lg-6 col-xxl-5" href="our-capabilities/medical-device/index.html"
+                               target="_self"><span class="full-btn btn btn-raised btn-outline btn-outline-white"><span class="icon"><img src="wp-content/uploads/2021/08/med_device.svg"></span>MEDICAL DEVICE</span></a>
+                                                                                    <a class="animate col-12 col-lg-6 col-xxl-5" href="our-capabilities/premier-one-ecosystem/index.html"
+                               target="_self"><span class="full-btn btn btn-raised btn-outline btn-outline-white"><span class="icon"><img src="wp-content/uploads/2021/05/New-Project-2-1.png"></span>PREMIER ECOSYSTEM</span></a>
+                                        </div>
+        </div>
+                    </div>
+        </div>
+    </div>
+</div>
 
-<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
-	<tr>
-	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
-	</tr>
-</table>
+<div class="column-bg dark our-expertise" style="background-image: url(wp-content/uploads/2021/05/our_expertise_2-1.png);">
+    <div class="container">
+        <div class="row">
+            <div class="col-12  text-center">
+                <div class="heading"><h2>Our Expertise</h2></div>
+                <div class="content-block"><p>We’re clinical development experts focused on helping today’s most innovative biotech and specialty pharma companies take their best ideas from benchtop to bedside.</p>
+</div>
+                <div class="subtitle"><h3>therapeutic &#038; special population expertise</h3></div>
+                <div class="hero-cta-holder">
+                    <div class="row justify-content-center  full-btn">
+                        <a href="learnings-insights/therapeutic-and-special-population-expertise/rare-disease/index.html" class="col-12 col-xl-3 col-xxl-3 visible"><span class="full-btn btn btn-raised btn-outline btn-outline-blue">rare disease</span></a><a href="learnings-insights/therapeutic-and-special-population-expertise/gene-and-cell-therapy-clinical-trial-experience/index.html" class="col-12 col-xl-3 col-xxl-3 visible"><span class="full-btn btn btn-raised btn-outline btn-outline-blue">cell &#038; gene therapy</span></a><a href="learnings-insights/therapeutic-and-special-population-expertise/oncology-hematology/index.html" class="col-12 col-xl-3 col-xxl-3 visible"><span class="full-btn btn btn-raised btn-outline btn-outline-blue">oncology &#038; hematology</span></a><a href="learnings-insights/therapeutic-and-special-population-expertise/dermatology/index.html" class="col-12 col-xl-3 col-xxl-3 visible"><span class="full-btn btn btn-raised btn-outline btn-outline-blue">dermatology</span></a><a href="learnings-insights/therapeutic-and-special-population-expertise/neuroscience/index.html" class="col-12 col-xl-3 col-xxl-3 visible"><span class="full-btn btn btn-raised btn-outline btn-outline-blue">neuroscience</span></a><a href="learnings-insights/therapeutic-and-special-population-expertise/pediatrics/index.html" class="col-12 col-xl-3 col-xxl-3 visible"><span class="full-btn btn btn-raised btn-outline btn-outline-blue">pediatrics</span></a><a href="our-capabilities/medical-device/index.html" class="col-12 col-xl-3 col-xxl-3 visible"><span class="full-btn btn btn-raised btn-outline btn-outline-blue">medical device</span></a><a href="learnings-insights/therapeutic-and-special-population-expertise/analgesia/index.html" class="col-12 col-xl-3 col-xxl-3 visible"><span class="full-btn btn btn-raised btn-outline btn-outline-blue">analgesia</span></a><a href="learnings-insights/therapeutic-and-special-population-expertise/womens-health-clinical-trial-expertise/index.html" class="col-12 col-xl-3 col-xxl-3 visible"><span class="full-btn btn btn-raised btn-outline btn-outline-blue">women&#8217;s health</span></a><a href="our-capabilities/diagnostics/index.html" class="col-12 col-xl-3 col-xxl-3 visible"><span class="full-btn btn btn-raised btn-outline btn-outline-blue">diagnostics</span></a>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+
+<section class="cards-new column-bg wrapper">
+    <div class="container">
+        <div class="row align-items-start">
+            <div class="col-12 ">
+                                    <header class="section-content text-center">
+                        <h2 class="title animate">Leading the way</h2>
+                                                    <div class="desc animate">Our customers are highly innovative biopharmaceutical companies doing incredible things. It’s amazing and often very complex science, and we’ve positioned ourselves right in the middle of the action, supporting therapeutic areas where pioneers are doing the most exciting work.</div>
+                                                </header>
+                                </div>
+        </div>
+            <div class="row cards-holder">
+
+                <div class="col-12 col-lg-6 full-btn width-50">
+                    <div class="subtitle">events &#038; webinars</div>
+                    <div class="content">
+                    <div class="card-item"><div class="card-icon"><img src="wp-content/themes/TheeTheme/images/webinar.svg"></div><div class="card-info"><span class="type">webinar</span><h2><a href="alternative-designs-to-traditional-33-design-in-phase-1-dose-escalation-studies/index.html">Alternative Designs to Traditional 3+3 Design in Phase 1 Dose Escalation Studies</a></h2><span class="card-description"><strong>Presenters: </strong>Abie Ekangaki, PhD, VP, Statistical Consulting &amp; Andreas Schreiner, MD, VP, Medical Affairs Neuroscience &amp; Analgesia</span><span class="date">March 3, 2022</span></div></div><div class="card-item"><div class="card-icon"><img src="wp-content/themes/TheeTheme/images/webinar.svg"></div><div class="card-info"><span class="type">webinar</span><h2><a href="empowering-oncology-patients-to-maximize-study-outcomes-australia/index.html">Empowering Oncology Patients to Maximize Study Outcomes (Australia)</a></h2><span class="card-description"><strong>Presenters: </strong>Ashley Herrick, PhD, Exec. Dir., Oncology Program Strategy &amp; Nicole Carswell, Exec. Dir., Patient Engagement &amp; Recruitment</span><span class="date">March 3, 2022</span></div></div><div class="card-item"><div class="card-icon"><img src="wp-content/themes/TheeTheme/images/events.svg"></div><div class="card-info"><span class="type">event</span><h2><a href="iscr-indian-society-of-clinical-research/index.html">ISCR (Indian Society of Clinical Research)</a></h2><span class="card-description">Virtual</span><span class="date">March 4, 2022 &#8211; March 5, 2022</span></div></div>                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 full-btn width-50">
+                    <div class="subtitle">latest resources</div>
+                    <div class="content">
+                    <div class="card-item"><div class="card-icon"><img src="wp-content/themes/TheeTheme/images/blogs1.svg"></div><div class="card-info"><span class="type">blog</span><h2><a href="blog-rare-disease-recruitement/index.html">Rare Disease Recruitment: 5 Strategies for Differentiating Trials in a Competitive Research Environment</a></h2><span class="date">By Jaclyn Brown <br> February 22, 2022</span></div></div><div class="card-item"><div class="card-icon"><img src="wp-content/themes/TheeTheme/images/blogs1.svg"></div><div class="card-info"><span class="type">blog</span><h2><a href="blog-diagnostic-approval-preparation/index.html">The Key to Streamlining Regulatory Approval for IVDs</a></h2><span class="date">By Matthew Nowland <br> February 15, 2022</span></div></div><div class="card-item"><div class="card-icon"><img src="wp-content/themes/TheeTheme/images/blogs1.svg"></div><div class="card-info"><span class="type">blog</span><h2><a href="blog-considerations-for-clinical-studies-in-heavy-menstrual-bleeding/index.html">Considerations for Clinical Studies in Heavy Menstrual Bleeding</a></h2><span class="date">By Andrea Lukes <br> January 31, 2022</span></div></div>                    </div>
+                </div>
+            </div>
+        <div class="row card-deck">
+                    </div>
+    </div>
+</section>
+
+
+<div class="column-bg one-column-bg resource-callout dark" style="background-image: url('');">
+    <div class="background-overlay solid-background-secondary" style="opacity: 1"></div>
+    <div class="container">
+        <div class="row">
+                                    <div class="col-12  text-center">
+                <div class="heading animate">
+                    <h2>Premier Insights</h2>
+                                    </div>
+                                    <div class="content-block animate">
+        <p>Customized services for each program, with tailored processes designed to meet highly specific needs. We’ve learned a lot about what works and what doesn’t. Browse the latest learnings and insights from our clinical development professionals.</p>
+    </div>
+                <div class="row text-left">
+                                                <div class="col-12 col-md-6 col-lg-3 insight-holder" data-herf="premier-insight-275-streamlining-regulatory-submissions-for-a-novel-advanced-therapy-medicinal-product-trial/index.html">
+                                    <h3 style="color: #ffffff;">Oncology &amp; Hematology</h3>
+                                    <div class="card-image text-center animate">
+                                        <a href="premier-insight-275-streamlining-regulatory-submissions-for-a-novel-advanced-therapy-medicinal-product-trial/index.html">
+                                            <img style="max-height: 270px;" src="wp-content/uploads/2021/10/Insight275-490x359.jpg" alt="Premier Insight 275: Streamlining Regulatory Submissions for a Novel Advanced Therapy Medicinal Product Trial">
+                                        </a>
+                                    </div>
+                                    <div class="title-holder animate">
+                                                                                <a href="premier-insight-275-streamlining-regulatory-submissions-for-a-novel-advanced-therapy-medicinal-product-trial/index.html"><span class="desc"> Streamlining Regulatory Submissions for a Novel Advanced Therapy Medicinal Product Trial</span></a>
+                                    </div>
+                                </div>
+                                                                <div class="col-12 col-md-6 col-lg-3 insight-holder" data-herf="premier-insights-274-site-selection-manufacturing-long-term-follow-up-in-a-transition-phase-1-2-gene-therapy-trial-2/index.html">
+                                    <h3 style="color: #ffffff;">Cell &amp; Gene Therapy</h3>
+                                    <div class="card-image text-center animate">
+                                        <a href="premier-insights-274-site-selection-manufacturing-long-term-follow-up-in-a-transition-phase-1-2-gene-therapy-trial-2/index.html">
+                                            <img style="max-height: 270px;" src="wp-content/uploads/2021/03/celltherapy.jpg" alt="Premier Insight 274: Site Selection, Manufacturing, and Long-Term Follow-Up in a Transition Phase 1/2 Gene Therapy Trial">
+                                        </a>
+                                    </div>
+                                    <div class="title-holder animate">
+                                                                                <a href="premier-insights-274-site-selection-manufacturing-long-term-follow-up-in-a-transition-phase-1-2-gene-therapy-trial-2/index.html"><span class="desc"> Site Selection, Manufacturing, and Long-Term Follow-Up in a Transition Phase 1/2 Gene Therapy Trial</span></a>
+                                    </div>
+                                </div>
+                                                                <div class="col-12 col-md-6 col-lg-3 insight-holder" data-herf="premier-insight-273-conclusive-positive-results-delivered-ahead-of-time-by-eight-months/index.html">
+                                    <h3 style="color: #ffffff;">Neuroscience</h3>
+                                    <div class="card-image text-center animate">
+                                        <a href="premier-insight-273-conclusive-positive-results-delivered-ahead-of-time-by-eight-months/index.html">
+                                            <img style="max-height: 270px;" src="wp-content/uploads/2016/04/0422-20PR_Premier-Insights_273_CNS-Binge-Eating_v4_Page_1-490x379.png" alt="Premier Insight 273: Conclusive &#038; Positive Results Delivered Ahead of Time – By Eight Months">
+                                        </a>
+                                    </div>
+                                    <div class="title-holder animate">
+                                                                                <a href="premier-insight-273-conclusive-positive-results-delivered-ahead-of-time-by-eight-months/index.html"><span class="desc"> Conclusive &#038; Positive Results Delivered Ahead of Time – By Eight Months</span></a>
+                                    </div>
+                                </div>
+                                                                <div class="col-12 col-md-6 col-lg-3 insight-holder" data-herf="premier-insight-272-delivering-global-expertise-pediatric-gene-therapy-trial/index.html">
+                                    <h3 style="color: #ffffff;">Pediatrics</h3>
+                                    <div class="card-image text-center animate">
+                                        <a href="premier-insight-272-delivering-global-expertise-pediatric-gene-therapy-trial/index.html">
+                                            <img style="max-height: 270px;" src="wp-content/uploads/2020/03/0408-20PR_Premier-Insights_FINAL-edits_Page_1-490x379.png" alt="Premier Insight 272: Delivering the Global Expertise Required to Coordinate a Pediatric Gene Therapy Trial">
+                                        </a>
+                                    </div>
+                                    <div class="title-holder animate">
+                                                                                <a href="premier-insight-272-delivering-global-expertise-pediatric-gene-therapy-trial/index.html"><span class="desc"> Delivering the Global Expertise Required to Coordinate a Pediatric Gene Therapy Trial</span></a>
+                                    </div>
+                                </div>
+                                                </div>
+                        <div class="hero-cta-holder">
+                        <div class="row justify-content-center  full-btn">
+                                                                            <a class="animate col-12 col-lg-6 col-xxl-5" href="learnings-insights/resource-center/index.html"
+                               target="_self"><span class="full-btn btn btn-raised btn-outline btn-outline-white">Visit Our Resource Center</span></a>
+                                        </div>
+        </div>
+                    </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="one-column-bg contact-block light paralax" style="background-image: url('');">
+    <div class="background-overlay solid-background-transparent" style="opacity: 1"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-7 col-xl-6 col-xxl-7 mx-auto text-md-left text-center">
+                <div class="heading animate">
+                    <h2>Connect with us</h2>
+                                    </div>
+                <div class="content-block animate">
+                    <p>Ready to get started? So are we. Drop us a line to learn more about how we can help.</p>
+                </div>
+                        <div class="hero-cta-holder">
+                        <div class="row justify-content-center justify-content-lg-start justify-content-lg-start full-btn">
+                                                                            <a class="animate col-12 col-lg-12 col-xl-6" href="contact/index.html"
+                               target="_self"><span class="full-btn btn btn-raised btn-outline btn-outline-primary-lighter">Contact Us Now</span></a>
+                                        </div>
+        </div>
+                    </div>
+            <div class="col-12 col-md-5 col-xl-6 col-xxl-5 contact-block-image text-center animate">
+                <div id="anim-6221408236ce1" class="wpbdmv-animation loading align-left renderer-svg" style="max-width: 100%;"></div>            </div>
+        </div>
+    </div>
+</div></main>
+</div>
+<div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="video-modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+<!--BE IXF: The following <div> block needs to be placed in the location where the link block will be displayed-->
+<!--BE IXF: For your website, the location is above/below ... -->
+<div class="be-ix-link-block">
+    <style>
+        .be-ix-link-block .be-related-link-container {
+            padding: 27px 0;
+        }
+        @media (max-width: 767px){
+            .be-ix-link-block .be-related-link-container .be-label{
+                width: auto!important;
+                margin-right: 0!important;
+            }
+        }
+    </style>
+    
+<!-- be_ixf, bodystr, body_1 -->
+
+<script>
+(function() {
+  var bectabarscript = document.createElement("script");
+  bectabarscript.type = "text/javascript";
+  bectabarscript.id="bectabarscriptid";
+  bectabarscript.async = "true";
+  bectabarscript.setAttribute("data-customerid","f00000000217252");
+  bectabarscript.setAttribute("data-testmode","true");
+  bectabarscript.setAttribute("data-configpath","../cta-test-be.s3.us-east-2.amazonaws.com/js-test/cta_f00000000217252-v3.js");
+  bectabarscript.src = "../cta-cf.bc0a.com/js/cta-core-v3.js";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bectabarscript, s);
+})();
+</script>
+
+<!-- be_ixf, sdk, is -->
+</div>
+<!--BE IXF: end-->
+
+<footer class="footer sticky">
+  <div class="footer-container container">
+    <div class="row">
+        <div class="col-12 col-md-12">
+            <div class="row footer-logo align-items-center justify-content-md-between">
+                <div class="col">
+                                            <a href="index.html"><img
+                        src="wp-content/uploads/2019/04/Premier-Logo.png" class="logo"
+                        alt="Premier Research" /></a>                </div>
+                <div class="col social text-right">
+                    <ul>
+                                                    <li><a href="https://www.linkedin.com/company/premier-research" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                                                        <li><a href="https://twitter.com/premierresearch" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-12 col-md-12">
+            <div class="row align-items-center justify-content-between">
+                <div class="footer-menu col-12 col-md-auto">
+                    <ul id="menu-footer" class="footer-menu-list"><li id="menu-item-13972" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13972"><a href="corporate-policy/index.html">Corp. Policy</a></li>
+<li id="menu-item-10526" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10526"><a href="privacy-policy-2/index.html">Privacy</a></li>
+<li id="menu-item-10527" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10527"><a href="cookie-policy/index.html">Cookies</a></li>
+<li id="menu-item-10528" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10528"><a href="investigators/index.html">Investigators</a></li>
+<li id="menu-item-10529" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10529"><a href="our-company/news/index.html">News</a></li>
+<li id="menu-item-23346" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23346"><a href="our-company/careers/index.html">Careers</a></li>
+</ul>                </div>
+                <div class="col-12 copy-nav col-md-auto text-right text-lg-left">
+                    <div class="copy d-none d-md-inline-block">
+                        &copy; 2022 Premier Research                    </div>
+                </div>
+                <div class="col-12 d-md-none mobile-copy text-center">
+                    &copy; 2022 Premier Research                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.498039215686" /><feFuncG type="table" tableValues="0 0.498039215686" /><feFuncB type="table" tableValues="0 0.498039215686" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.549019607843 0.988235294118" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.717647058824 0.254901960784" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.278431372549" /><feFuncB type="table" tableValues="0.592156862745 0.278431372549" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.647058823529" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.780392156863 1" /><feFuncG type="table" tableValues="0 0.949019607843" /><feFuncB type="table" tableValues="0.352941176471 0.470588235294" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.650980392157 0.403921568627" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.447058823529 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.0980392156863 1" /><feFuncG type="table" tableValues="0 0.662745098039" /><feFuncB type="table" tableValues="0.847058823529 0.419607843137" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><script type='text/javascript' src='wp-includes/js/dist/vendor/regenerator-runtime.min3937.js?ver=0.13.9' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/premier-research.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/index7e15.js?ver=5.5.4' id='contact-form-7-js'></script>
+<script type='text/javascript' id='wpcf7-redirect-script-js-extra'>
+/* <![CDATA[ */
+var wpcf7r = {"ajax_url":"https:\/\/premier-research.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/wpcf7-redirect/build/js/wpcf7r-fe4963.js?ver=1.1' id='wpcf7-redirect-script-js'></script>
+<script type='text/javascript' src='wp-content/themes/TheeTheme/scripts/popper271b.js?ver=5.9' id='popper-js-js'></script>
+<script type='text/javascript' src='wp-content/themes/TheeTheme/scripts/bootstrap-material-design271b.js?ver=5.9' id='bs-material-js-js'></script>
+<script type='text/javascript' src='../vjs.zencdn.net/7.5.4/video271b.js?ver=5.9' id='video-js-js'></script>
+<script type='text/javascript' src='wp-content/themes/TheeTheme/scripts/vendor/videojs-vimeo.min271b.js?ver=5.9' id='video-js-vimeo-js'></script>
+<script type='text/javascript' src='wp-content/themes/TheeTheme/scripts/vendor/Youtube.min271b.js?ver=5.9' id='video-js-youtube-js'></script>
+<script type='text/javascript' src='wp-content/themes/TheeTheme/scripts/vendor/jquery.selectric271b.js?ver=5.9' id='selectric-js'></script>
+<script type='text/javascript' src='wp-content/themes/TheeTheme/scripts/vendor/in-view.min271b.js?ver=5.9' id='in-view-js'></script>
+<script type='text/javascript' id='main-js-extra'>
+/* <![CDATA[ */
+var urls = {"base":"https:\/\/premier-research.com","theme":"https:\/\/premier-research.com\/wp-content\/themes\/TheeTheme","ajax":"https:\/\/premier-research.com\/wp-admin\/admin-ajax.php","posts":"{\"error\":\"\",\"m\":\"\",\"p\":\"2\",\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"\",\"pagename\":\"\",\"page_id\":\"2\",\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":10,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}","current_page":"1","max_page":"0"};
+var info = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/themes/TheeTheme/dist/scripts/scripts271b.js?ver=5.9' id='main-js'></script>
+<script type='text/javascript' src='wp-content/plugins/wp-bodymovin/assets/js/lottie.min5697.js?ver=5.5.3' id='bodymovin-js'></script>
+<script type='text/javascript' id='wp-bodymovin-js-extra'>
+/* <![CDATA[ */
+var wpbodymovin = {"animations":[{"id":5047,"container_id":"anim-6221408236ce1","autoplay_viewport":true,"autostop_viewport":true,"loop":true,"width":"100%","height":"","lazyload":true,"autoplay_onload":true,"renderer":"svg"}],"ajaxurl":"https:\/\/premier-research.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/wp-bodymovin/assets/js/wpbodymovin.min3c94.js?ver=2.1.0' id='wp-bodymovin-js'></script>
+<script type='text/javascript' src='wp-content/plugins/wp-bodymovin/assets/js/isonscreen.min622c.js?ver=0.0.1' id='jquery.isonscreen-js'></script>
+    
+
+</footer>
 </body>
 
+<!-- Mirrored from premier-research.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Mar 2022 22:31:32 GMT -->
 </html>
-
-
